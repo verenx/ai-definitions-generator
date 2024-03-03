@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>Word Definition AI Generator</title>
 </head>
 <body> <div class="container">
-    <header><h1>Word Definition AI Generator</h1></header>
-    <main>
-        <form action="">
-            <input type="text" placeholder="Type your recipe keyword here" autofocus required class="search-field" id="search-field"/>
-            <input type="submit" class="submit-button" id="submit-button"/>
-        </form>
-        <div class="generated-poem" id="generated-definition">
-            Poem appears here <br />
-            Poem appears here <br />
-            Poem appears here <br />
 
+    <header><h1>Word Definition AI Generator</h1></header>
+
+    <main>
+        <form action="" id="generate-definition-form">
+            <input type="text" placeholder="Type your recipe keyword here" autofocus required class="search-field" />
+            <input type="submit" class="submit-button" />
+        </form>
+
+        <div class="generated-definition" id="generated-definition">
         </div>
     </main>
+
     <footer>This AI project was coded with 🤎 by <a href="https://www.linkedin.com/in/verena-al-khazraji-a73bb370" target="_blank"> 
         Verena Al-Khazraji</a>, 
-        is <a href="https://github.com/verenx/ai-recipe-generator" target="_blank">open-sourced on Github</a> 
-        and <a href="https://verenx-recipe-generator.netlify.app/" target="_blank">hosted on Netlify.</a></footer>
+        is <a href="https://github.com/verenx/ai-definitions-generator" target="_blank">open-sourced on Github</a> 
+        and <a href="https://verenx-word-definitions-generator.netlify.app/?/" target="_blank">hosted on Netlify.</a></footer>
+
     </div>
     <script src="src/index.js"></script>
 </body>

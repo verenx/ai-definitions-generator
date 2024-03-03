@@ -1,9 +1,14 @@
-function generatePoem(event) {
+function generateDefinition(event) {
 event.preventDefault();
-let poemElement = document.querySelector("#generated-poem");
-let searchFieldElement = document.querySelector("#search-field");
-poemElement.innerHTML = searchFieldElement.value;
+
+new Typewriter('#generated-definition', {
+    strings: "an alcoholic drink made from fermented grape juice",
+    autoStart: true,
+    delay: 1,
+    cursor: "",
+  });
+
 }
 
-let submitButton = document.querySelector("#submit-button");
-submitButton.addEventListener("click", generatePoem);
+let generateDefintionElement = document.querySelector("#generate-definition-form");
+generateDefintionElement.addEventListener("submit", generateDefinition);

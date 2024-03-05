@@ -22,10 +22,12 @@ h1 {
     color: #07110c;
 }
 
+.form-container {
+  margin: 30px;
+}
+
 form {
-    border-radius: 10px;
     display: flex;
-    margin: 30px;
 }
 
 .search-field {
@@ -37,19 +39,24 @@ font-size: 18px;
 padding: 30px;
 border-radius: 10px;
 line-height: 20px;
-margin: 10px;
 }
 
 .submit-button {
+margin-left: 10px;
+font-size: 18px;
+padding: 15px;
+border-radius: 10px;
+line-height: 20px;
 background-color: #866843;
 color: #faf6ed;
 border: 1px solid #DFD3C3;
 width: 20%;
-margin: 10px;
-padding: 30px;
-border-radius: 10px;
-font-size: 18px;
-line-height: 20px;
+}
+
+.hint {
+  font-size: 11px;
+  margin-top: 5px;
+  color: #415241;
 }
 
 h3 {
@@ -69,14 +76,29 @@ font-size: 20px;
 line-height: 1.5;
 }
 
-.generated-definition strong {
+.generated-definition em {
     color: rgb(54, 46, 1);
 }
 
+.hidden {
+  display: none;
+}
+
+.generating-blink {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 footer {
-  margin: 60px 0;
+  margin: 30px;
+  padding-top: 30px;
     text-align: center;
-    font-size: 12px;
+    font-size: 11px;
     color: #272044;
 }
 

@@ -67,6 +67,10 @@ font-size: 20px;
 line-height: 1.5;
 }
 
+.generated-definition strong {
+    color: rgb(54, 46, 1);
+}
+
 footer {
     text-align: center;
     font-size: 12px;

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Word Definition AI Generator</title>
 </head>
 <body> <div class="container">
@@ -13,7 +14,7 @@
 
     <main>
         <form action="" id="generate-definition-form">
-            <input type="text" placeholder="Type word here" autofocus required class="search-field" />
+            <input type="text" placeholder="Type word here" autofocus required class="search-field" id="search-field"/>
             <input type="submit" class="submit-button" />
         </form>
 
